@@ -3,7 +3,7 @@ from pyspark.sql import Row
 from src.loaders.loaders import load_data_from_jdbc
 
 
-def test_load_data_from_jdbc(spark_session):
+def test_load_data_from_jdbc(logger, spark_session):
     url = "jdbc:sqlite:test_data/test_database.sqlite"
     driver = "org.sqlite.JDBC"
     table_name = "test_table"
@@ -19,7 +19,7 @@ def test_load_data_from_jdbc(spark_session):
                                                  Row(company_code='IGC', description='I GAS COMPANY'),
                                                  Row(company_code='JGC', description='J GAS COMPANY')])
 
-    actual_df = load_data_from_jdbc(spark_session, driver, url, table_name)
+    actual_df = load_data_from_jdbc(logger, spark_session, driver, url, table_name)
 
     assert actual_df.exceptAll(expected_df).collect() == []
     assert expected_df.exceptAll(actual_df).collect() == []

@@ -1,4 +1,5 @@
-logs/
+#logs/
+#data/output/database.sqlite
 .idea/
 .vscode/
 

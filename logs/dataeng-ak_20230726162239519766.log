@@ -1,0 +1,21 @@
+[26-Jul-23 04:22PM] - INFO - Application - 'dataeng-ak' started
+[26-Jul-23 04:22PM] - INFO - Reading configuration file
+[26-Jul-23 04:22PM] - DEBUG - Inside read_config function in utils.py
+[26-Jul-23 04:22PM] - INFO - Creating spark session with app-name - 'dataeng-ak'
+[26-Jul-23 04:22PM] - DEBUG - Inside get_spark_session function in utils.py
+[26-Jul-23 04:22PM] - INFO - Previous output not found
+[26-Jul-23 04:22PM] - DEBUG - upsert_flag: False
+[26-Jul-23 04:22PM] - INFO - load_start_create_date: 1900-01-01 00:00:00. load_start_modified_date: 1900-01-01 00:00:00
+[26-Jul-23 04:22PM] - INFO - Reading leaks table
+[26-Jul-23 04:22PM] - DEBUG - Inside load_data_from_jdbc function in loaders.py
+[26-Jul-23 04:22PM] - INFO - Reading leak_class_min_date table
+[26-Jul-23 04:22PM] - DEBUG - Inside load_data_from_jdbc function in loaders.py
+[26-Jul-23 04:22PM] - INFO - Reading lut_company table
+[26-Jul-23 04:22PM] - DEBUG - Inside load_data_from_jdbc function in loaders.py
+[26-Jul-23 04:22PM] - INFO - Reading town_company table
+[26-Jul-23 04:22PM] - DEBUG - Inside load_data_from_jdbc function in loaders.py
+[26-Jul-23 04:22PM] - INFO - Writing output at: /Users/ashish.kharbanda/Documents/GitHub/dataeng-ak/data/output/database.sqlite
+[26-Jul-23 04:22PM] - INFO - Total records: 4381
+[26-Jul-23 04:22PM] - DEBUG - Inside write_data_to_jdbc function in writers.py
+[26-Jul-23 04:23PM] - INFO - Application execution completed successfully
+[26-Jul-23 04:23PM] - INFO - Closing down clientserver connection
